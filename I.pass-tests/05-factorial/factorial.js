@@ -8,6 +8,12 @@
 // calculate and return the factorial of int
 // note: factorial of 0 is 1
 
-function factorial(int) {}
+function factorial(n) {
+  if (n === 0 || n === 1) {
+    return 1
+  }
+
+  return n * factorial(n - 1)
+}
 
 module.exports = factorial;
